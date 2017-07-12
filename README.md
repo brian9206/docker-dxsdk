@@ -6,8 +6,8 @@ Command as msbuild.exe parameter.
 
 ```powershell
 docker run --rm `
-    -v C:\path\to\your\project:C:\project `
+    -v C:\path\to\your\project:C:\Project `
     brian9206/dxsdk:latest `
-    "C:\project\YourSolution.sln" `
+    YourSolution.sln `
     /t:Build /p:Configuration=Release
 ```
